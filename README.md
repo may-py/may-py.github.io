@@ -1,6 +1,6 @@
 # HRSM website
 
-Static consulting website for HRSM (pure HTML/CSS/JS, no build step). Content migrated from the Wix draft at https://hrsmvn.wixsite.com/hrsm.
+Static consulting website for HRSM (pure HTML/CSS/JS, no build step).
 
 ## Structure
 
