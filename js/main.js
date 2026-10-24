@@ -10,7 +10,7 @@ function decode(enc) {
 }
 
 function getEmail() {
-  return EMAIL_PARTS.map(decode).join('0040');
+  return EMAIL_PARTS.map(decode).join(String.fromCharCode(64));
 }
 
 // Messages shown by this script, per page language (<html lang="...">).
