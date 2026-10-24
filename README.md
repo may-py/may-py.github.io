@@ -5,7 +5,7 @@ Static consulting website for HRSM (pure HTML/CSS/JS, no build step).
 ## Structure
 
 ```
-index.html        single-page site (About, Services, Team, Publications, Contact)
+index.html        single-page site (About, Services, Publications, Contact)
 css/styles.css    styles
 js/main.js        protected email reveal, contact form, mobile nav
 assets/           favicon
