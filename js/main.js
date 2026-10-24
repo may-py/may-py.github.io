@@ -13,6 +13,23 @@ function getEmail() {
   return EMAIL_PARTS.map(decode).join('@');
 }
 
+// Messages shown by this script, per page language (<html lang="...">).
+const MESSAGES = {
+  en: {
+    thanks: 'Thanks for submitting!',
+    invalid: 'Please fill in your name, email and message.',
+    opening: 'Thanks for submitting! Your email app should open now.',
+    subject: (name) => `Enquiry from ${name}`,
+  },
+  vi: {
+    thanks: 'Cảm ơn bạn đã gửi!',
+    invalid: 'Vui lòng nhập họ tên, email và nội dung.',
+    opening: 'Cảm ơn bạn đã gửi! Ứng dụng email của bạn sẽ mở ngay.',
+    subject: (name) => `Yêu cầu tư vấn từ ${name}`,
+  },
+};
+const t = MESSAGES[document.documentElement.lang] || MESSAGES.en;
+
 const revealBtn = document.getElementById('email-reveal');
 revealBtn.addEventListener('click', (e) => {
   if (!e.isTrusted) return;
@@ -35,22 +52,22 @@ form.addEventListener('submit', (e) => {
 
   // Bot checks: honeypot filled in, or submitted faster than a human could type.
   if (form.website.value || Date.now() - loadedAt < 3000) {
-    status.textContent = 'Thanks for submitting!';
+    status.textContent = t.thanks;
     form.reset();
     return;
   }
 
   if (!form.checkValidity()) {
-    status.textContent = 'Please fill in your name, email and message.';
+    status.textContent = t.invalid;
     form.reportValidity();
     return;
   }
   const data = new FormData(form);
-  const subject = data.get('subject') || `Enquiry from ${data.get('name')}`;
+  const subject = data.get('subject') || t.subject(data.get('name'));
   const body = `${data.get('message')}\n\n— ${data.get('name')} (${data.get('email')})`;
   window.location.href =
     `mailto:${getEmail()}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  status.textContent = 'Thanks for submitting! Your email app should open now.';
+  status.textContent = t.opening;
   form.reset();
 });
 
