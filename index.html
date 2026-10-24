@@ -1,92 +1,459 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <title>Anybody Can Code!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HRSM | End-to-end Business Consulting</title>
+  <meta name="description" content="HRSM is a management consulting firm since 2013 serving clients in Vietnam and India, with partner support in the Philippines — market entry, company formation, bookkeeping, payroll and tax compliance.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
-
 <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
-        <div class="container">
-            <a class="btn btn-outline-success me-2" style="text-decoration: azure;"
-                href="https://www.youtube.com/channel/UCbFpiitUZRMgS_xp2fJa0tQ">
-                ABCC!
-            </a>
-	<span> </span>
-	<a class="btn btn-outline-success me-2" style="text-decoration: azure;"
-                href="https://funxlearn.notion.site/Vietnamese-Phim-ad643fdcb2514077acbd28186f2a6bb9">
-                Learn Vietnamese Language with Movies
-            </a>
-	
-        </div>
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="HRSM home">
+      <span class="brand-mark">H</span><span class="brand-text">HRSM</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">How we work</a>
+      <a href="#team">Team</a>
+      <a href="#publications">Insights</a>
+      <a href="#contact" class="btn btn-small">Contact us</a>
     </nav>
-    <main class="container my-3" role="main">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <p>
-                    <img class="img-thumbnail rounded mx-auto d-block"
-                        src="https://github.com/may-py/may-py.github.io/blob/main/ABCC%20Code.png?raw=true" alt=""
-                        height="300" width="400">
-                </p>
-                <a class='btn btn-primary fa fa-thumbs-up'
-                    href="https://www.youtube.com/channel/UCbFpiitUZRMgS_xp2fJa0tQ?sub_confirmation=1">
-                    Subscribe Youtube!
-                </a>
-                <hr />
+  </div>
+</header>
 
-                <ul>
-                    <h3 class="text-light text-center bg-dark">Please watch tutorials on the below topic.</h3>
-                    <li>Python <a
-                            href="https://www.youtube.com/playlist?list=PLpS9MBO_H5nRb5e017a7LXiQyKSOFVeQ9">YouTube
-                            Playlist</a>
-                    </li>
-		    <li>Power Bi <a
-                            href="https://www.youtube.com/playlist?list=PLpS9MBO_H5nQteB75_c_KJqBXteFnDIJw">YouTube
-                            Playlist</a>
-                    </li>
-                    <li>Microsoft Excel</li>
-                    <li>Data cleaning, Data Manipulation, Data Visualization</li>
-                    <li>Django (a python based web framework)</li>
-                    <li>ReactJS</li>
-                    <li>NextJS</li>
-                </ul>
-            </div>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="grid-lines"></span>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="pill"><span class="dot"></span> Consulting in Vietnam · India · Philippines via partner</p>
+        <h1>Grow your business. <em>We'll handle the back office.</em></h1>
+        <p class="lead">From your first market study to your monthly tax filing, HRSM is one partner for the whole journey — so your senior team can stay focused on growth.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Schedule a consultation <span aria-hidden="true">→</span></a>
+          <a href="#services" class="btn btn-ghost">Explore services</a>
+        </div>
+      </div>
 
+      <div class="hero-visual" aria-hidden="true">
+        <div class="glass-card main-card">
+          <p class="gc-title">Your business journey</p>
+          <ol class="gc-steps">
+            <li class="done"><span></span>Market study &amp; partners</li>
+            <li class="done"><span></span>Company formation</li>
+            <li class="done"><span></span>Bank account opened</li>
+            <li class="active"><span></span>Payroll &amp; bookkeeping</li>
+            <li><span></span>VAT / GST filing</li>
+          </ol>
+          <div class="gc-bar"><span></span></div>
+        </div>
+        <div class="glass-card badge-card float-a">
+          <strong>2013</strong><small>Serving clients since</small>
+        </div>
+        <div class="glass-card badge-card float-b">
+          <strong>3</strong><small>Markets covered</small>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- MARQUEE -->
+  <div class="marquee" aria-label="Our areas of work">
+    <div class="marquee-track">
+      <span>Market studies</span><span>Company formation</span><span>Government approvals</span><span>Bank accounts</span><span>Bookkeeping</span><span>Payroll</span><span>Income tax</span><span>VAT &amp; GST</span><span>Audits</span><span>Recruitment</span><span>Representative offices</span><span>Business incubation</span>
+      <span aria-hidden="true">Market studies</span><span aria-hidden="true">Company formation</span><span aria-hidden="true">Government approvals</span><span aria-hidden="true">Bank accounts</span><span aria-hidden="true">Bookkeeping</span><span aria-hidden="true">Payroll</span><span aria-hidden="true">Income tax</span><span aria-hidden="true">VAT &amp; GST</span><span aria-hidden="true">Audits</span><span aria-hidden="true">Recruitment</span><span aria-hidden="true">Representative offices</span><span aria-hidden="true">Business incubation</span>
+    </div>
+  </div>
+
+  <!-- ABOUT / VALUES -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="fade">
+        <p class="eyebrow">About us</p>
+        <h2>A management consulting firm built around your growth</h2>
+        <p class="body-lg">Since 2013, HRSM has helped businesses in Vietnam and India with compliance, low-cost bookkeeping and taxation. We streamline your back-office functions, so the people who run your business can spend their time building it.</p>
+        <div class="vm">
+          <div>
+            <h3>Our vision</h3>
+            <p>Access knowledge to gain market share and provide quality solutions.</p>
+          </div>
+          <div>
+            <h3>Our mission</h3>
+            <p>Support the growth of our customers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="values-wrap fade">
+        <p class="values-caption">Our name is our promise</p>
+        <div class="values-grid">
+          <div class="value"><span class="letter">H</span><span class="word">Honesty</span><small>Clear advice and transparent pricing.</small></div>
+          <div class="value"><span class="letter">R</span><span class="word">Respect</span><small>For your time, your team and local rules.</small></div>
+          <div class="value"><span class="letter">S</span><span class="word">Self-improvement</span><small>Always learning, always sharper.</small></div>
+          <div class="value"><span class="letter">M</span><span class="word">Modern</span><small>Digital-first ways of working.</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head fade">
+        <p class="eyebrow">Services</p>
+        <h2>Support at every stage of your business</h2>
+        <p class="body-lg">Whether you're exploring a new market or running an established company, we cover each step — before, during and after incorporation.</p>
+      </div>
+      <div class="cards">
+        <article class="card fade">
+          <div class="card-top">
+            <span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+            <span class="card-num">01</span>
+          </div>
+          <h3>Pre-incorporation</h3>
+          <p class="card-sub">Understand the market before you commit.</p>
+          <ul>
+            <li>Market studies</li>
+            <li>Finding business partners &amp; distributors</li>
+            <li>Representation at business forums &amp; associations</li>
+          </ul>
+        </article>
+        <article class="card fade">
+          <div class="card-top">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span>
+            <span class="card-num">02</span>
+          </div>
+          <h3>Incorporation</h3>
+          <p class="card-sub">Get set up correctly from day one.</p>
+          <ul>
+            <li>Statutory compliance &amp; government approvals</li>
+            <li>Company formation</li>
+            <li>Bank account opening</li>
+            <li>Legal agreements</li>
+          </ul>
+        </article>
+        <article class="card fade">
+          <div class="card-top">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <span class="card-num">03</span>
+          </div>
+          <h3>Post-incorporation</h3>
+          <p class="card-sub">Run smoothly and stay compliant.</p>
+          <ul>
+            <li>Staff recruitment</li>
+            <li>Accounting &amp; payroll</li>
+            <li>Income tax, VAT &amp; GST compliance</li>
+            <li>Audits</li>
+          </ul>
+        </article>
+        <article class="card fade">
+          <div class="card-top">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></span>
+            <span class="card-num">04</span>
+          </div>
+          <h3>Other services</h3>
+          <p class="card-sub">Specialist support when you need it.</p>
+          <ul>
+            <li>University representation</li>
+            <li>Representative office setup</li>
+            <li>Business incubation centre</li>
+            <li>Commission agents</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-head center fade">
+        <p class="eyebrow">How we work</p>
+        <h2>Simple steps, one point of contact</h2>
+      </div>
+      <ol class="steps">
+        <li class="step fade">
+          <span class="step-num">1</span>
+          <h3>Consultation</h3>
+          <p>Tell us about your business, your goals and where you want to operate.</p>
+        </li>
+        <li class="step fade">
+          <span class="step-num">2</span>
+          <h3>Plan</h3>
+          <p>We map the approvals, filings and setup you need, with clear timelines and costs.</p>
+        </li>
+        <li class="step fade">
+          <span class="step-num">3</span>
+          <h3>Execute</h3>
+          <p>Our team handles the paperwork, registrations and coordination for you.</p>
+        </li>
+        <li class="step fade">
+          <span class="step-num">4</span>
+          <h3>Ongoing support</h3>
+          <p>Bookkeeping, payroll and tax compliance, month after month.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHY US (dark) -->
+  <section class="section why">
+    <div class="container why-grid">
+      <div class="fade">
+        <p class="eyebrow">Why HRSM</p>
+        <h2>Focus on growth. Leave the back office to us.</h2>
+        <p class="body-lg">Back-office work is essential, but it shouldn't take your leadership's time. We take care of it reliably and affordably.</p>
+        <a href="#contact" class="btn">Talk to us <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="why-list">
+        <div class="why-item fade">
+          <h3>One partner, end to end</h3>
+          <p>From market entry to annual audits, without juggling multiple providers.</p>
+        </div>
+        <div class="why-item fade">
+          <h3>Low-cost bookkeeping</h3>
+          <p>Professional accounting that fits the budget of a growing company.</p>
+        </div>
+        <div class="why-item fade">
+          <h3>Local compliance know-how</h3>
+          <p>Statutory, tax and VAT/GST requirements handled in each country we serve.</p>
+        </div>
+        <div class="why-item fade">
+          <h3>A decade of experience</h3>
+          <p>Supporting businesses across Asia since 2013.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRIES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center fade">
+        <p class="eyebrow">Where we work</p>
+        <h2>Three markets, one point of contact</h2>
+      </div>
+      <div class="countries">
+        <article class="country fade">
+          <span class="flag flag-vn" aria-hidden="true"></span>
+          <h3>Vietnam</h3>
+          <p>Our home base in Ho Chi Minh City.</p>
+        </article>
+        <article class="country fade">
+          <span class="flag flag-ph" aria-hidden="true"></span>
+          <h3>Philippines <span class="tag">Partner</span></h3>
+          <p>We refer clients to a trusted partner firm for local accounting and compliance support.</p>
+        </article>
+        <article class="country fade">
+          <span class="flag flag-in" aria-hidden="true"></span>
+          <h3>India</h3>
+          <p>Support for businesses expanding between India and Southeast Asia.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-head fade">
+        <p class="eyebrow">Team</p>
+        <h2>Who you’ll work with</h2>
+      </div>
+      <div class="team">
+        <article class="member fade">
+          <div class="avatar" aria-hidden="true">MS</div>
+          <div>
+            <h3>Mayur Suthar</h3>
+            <p class="role">Co-Founder &amp; Business Development Leader</p>
+            <p>Head of Business Development for many years and a favourite among our clients. Get in touch to schedule a consultation.</p>
+            <a class="member-link" href="#contact">Book a consultation →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <div class="section-head fade">
+        <p class="eyebrow">Insights</p>
+        <h2>News &amp; updates</h2>
+      </div>
+      <div class="posts">
+        <article class="post fade">
+          <div class="post-art art-1" aria-hidden="true"></div>
+          <div class="post-body">
+            <span class="tag">News</span>
+            <time datetime="2023-02-02">2 Feb 2023</time>
+            <h3>Local accounting agency expands team</h3>
+            <p class="muted">Article coming soon.</p>
+          </div>
+        </article>
+        <article class="post fade">
+          <div class="post-art art-2" aria-hidden="true"></div>
+          <div class="post-body">
+            <span class="tag">Regulation</span>
+            <time datetime="2023-02-02">2 Feb 2023</time>
+            <h3>3 new regulatory laws you should know</h3>
+            <p class="muted">Article coming soon.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container faq-wrap">
+      <div class="section-head fade">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq fade">
+        <details>
+          <summary>Can you help a foreign company set up in Vietnam?</summary>
+          <p>Yes. We support the full incorporation process — statutory compliance, government approvals, company formation, bank account opening and legal agreements.</p>
+        </details>
+        <details>
+          <summary>Can I use HRSM only for bookkeeping and tax?</summary>
+          <p>Absolutely. Many clients come to us for ongoing accounting, payroll, income tax and VAT/GST compliance alone.</p>
+        </details>
+        <details>
+          <summary>Which countries do you cover?</summary>
+          <p>We work directly with clients in Vietnam and India. For the Philippines, we refer you to a trusted partner firm.</p>
+        </details>
+        <details>
+          <summary>Can you help us find partners or distributors?</summary>
+          <p>Yes. Our pre-incorporation services include market studies, finding business partners and distributors, and representation at business forums and associations.</p>
+        </details>
+        <details>
+          <summary>How do we get started?</summary>
+          <p>Send us a message using the form below. We'll arrange a consultation to understand your needs.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="contact-card fade">
+        <div class="contact-info">
+          <p class="eyebrow">Contact us</p>
+          <h2>Let's talk about your business</h2>
+          <p>Tell us what you're planning — we'll get back to you to arrange a consultation.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <div>
+                <span class="label">Base</span>
+                <address>Ho Chi Minh City, Vietnam</address>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <div>
+                <span class="label">Email</span>
+                <!-- Address lives only in js/main.js (encoded) and is shown after a real click -->
+                <button type="button" class="reveal" id="email-reveal">Show email address</button>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span>
+              <div>
+                <span class="label">LinkedIn</span>
+                <a href="https://www.linkedin.com/company/hrsmglobal" target="_blank" rel="noopener">linkedin.com/company/hrsmglobal</a>
+              </div>
+            </li>
+          </ul>
         </div>
 
-    </main>
-    <footer class="page-footer fixed-bottom">
-        <div class="text-light bg-dark text-center">Copyright &copy;2022 Anybody Can Code All rights reserved</div>
-    </footer>
+        <form class="contact-form" id="contact-form" novalidate>
+          <!-- Honeypot: hidden from people, bots fill it in and get ignored -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Leave this empty</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">I'm interested in</label>
+            <select id="subject" name="subject">
+              <option value="">Choose a topic (optional)</option>
+              <option>Market entry / pre-incorporation</option>
+              <option>Company formation</option>
+              <option>Accounting &amp; payroll</option>
+              <option>Tax, VAT &amp; GST compliance</option>
+              <option>Recruitment</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit <span aria-hidden="true">→</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#top" class="brand brand-light">
+        <span class="brand-mark">H</span><span class="brand-text">HRSM</span>
+      </a>
+      <p>End-to-end business consulting for Vietnam and India, with partner support in the Philippines.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#publications">Insights</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="#contact">Contact us</a>
+      <a href="https://www.linkedin.com/company/hrsmglobal" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> HRSM. All rights reserved.</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
 
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-	    -->
-
+<script src="js/main.js" defer></script>
 </body>
-
 </html>
